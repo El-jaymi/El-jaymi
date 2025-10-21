@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4DBA7E3-3D29-4E25-8D8C-52A4285D075E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject></StartupObject>
+    <RootNamespace>LibraryManagementSystem</RootNamespace>
+    <AssemblyName>LibraryManagementSystem</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <Deterministic>true</Deterministic>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb" AutoGen="True" DependentUpon="Resources.resx" DesignTime="True" />
+    <Compile Include="My Project\Settings.Designer.vb" AutoGen="True" DependentUpon="Settings.settings" DesignTimeSharedInput="True" />
+    <Compile Include="My Project\Application.Designer.vb" />
+
+    <Compile Include="Forms\LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.vb" />
+
+    <Compile Include="Forms\SignUpForm.Designer.vb">
+      <DependentUpon>SignUpForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignUpForm.vb" />
+
+    <Compile Include="Forms\StudentDashboard.Designer.vb">
+      <DependentUpon>StudentDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StudentDashboard.vb" />
+
+    <Compile Include="Forms\BrowseBooksForm.Designer.vb">
+      <DependentUpon>BrowseBooksForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BrowseBooksForm.vb" />
+
+    <Compile Include="Forms\BookDetailsForm.Designer.vb">
+      <DependentUpon>BookDetailsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BookDetailsForm.vb" />
+
+    <Compile Include="Forms\BorrowBookForm.Designer.vb">
+      <DependentUpon>BorrowBookForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BorrowBookForm.vb" />
+
+    <Compile Include="Forms\MyBorrowedBooksForm.Designer.vb">
+      <DependentUpon>MyBorrowedBooksForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MyBorrowedBooksForm.vb" />
+
+    <Compile Include="Forms\BorrowingHistoryForm.Designer.vb">
+      <DependentUpon>BorrowingHistoryForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BorrowingHistoryForm.vb" />
+
+    <Compile Include="Forms\StudentProfileForm.Designer.vb">
+      <DependentUpon>StudentProfileForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StudentProfileForm.vb" />
+
+    <Compile Include="Forms\LibrarianDashboard.Designer.vb">
+      <DependentUpon>LibrarianDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LibrarianDashboard.vb" />
+
+    <Compile Include="Forms\ManageBooksForm.Designer.vb">
+      <DependentUpon>ManageBooksForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageBooksForm.vb" />
+
+    <Compile Include="Forms\ManageStudentsForm.Designer.vb">
+      <DependentUpon>ManageStudentsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageStudentsForm.vb" />
+
+    <Compile Include="Forms\IssueReturnBooksForm.Designer.vb">
+      <DependentUpon>IssueReturnBooksForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IssueReturnBooksForm.vb" />
+
+    <Compile Include="Forms\ReportsForm.Designer.vb">
+      <DependentUpon>ReportsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReportsForm.vb" />
+
+    <Compile Include="Forms\NotificationsForm.Designer.vb">
+      <DependentUpon>NotificationsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NotificationsForm.vb" />
+
+    <Compile Include="Forms\SettingsForm.Designer.vb">
+      <DependentUpon>SettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SettingsForm.vb" />
+
+    <Compile Include="Models\Student.vb" />
+    <Compile Include="Models\Book.vb" />
+    <Compile Include="Models\BorrowingTransaction.vb" />
+    <Compile Include="Models\Librarian.vb" />
+    <Compile Include="Models\Notification.vb" />
+    <Compile Include="Models\Fine.vb" />
+    <Compile Include="Models\Reservation.vb" />
+
+    <Compile Include="DataAccess\DatabaseHelper.vb" />
+
+    <Compile Include="Utilities\ValidationHelper.vb" />
+    <Compile Include="Utilities\PasswordHasher.vb" />
+    <Compile Include="Utilities\UiStyles.vb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

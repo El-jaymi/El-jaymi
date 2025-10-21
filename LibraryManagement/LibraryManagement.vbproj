@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{9E6D40A4-6A1B-4E18-8E55-0C3E2C9A7F11}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>LibraryManagement</RootNamespace>
     <AssemblyName>LibraryManagement</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -14,6 +14,9 @@
     <OptionExplicit>On</OptionExplicit>
     <OptionStrict>On</OptionStrict>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Program.Main</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,6 +49,7 @@
     <Compile Include="DataAccess\*.vb" />
     <Compile Include="Utilities\*.vb" />
     <Compile Include="Forms\*.vb" />
+    <Compile Include="Program.vb" />
     <EmbeddedResource Include="Forms\*.resx" />
     <None Include="App.config" />
   </ItemGroup>

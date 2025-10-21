@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MyApplication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MainForm>LoginForm</MainForm>
+  <SingleInstance>false</SingleInstance>
+  <ShutdownMode>AfterMainFormCloses</ShutdownMode>
+  <EnableVisualStyles>true</EnableVisualStyles>
+  <SaveMySettingsOnExit>true</SaveMySettingsOnExit>
+  <AuthenticationMode>Windows</AuthenticationMode>
+</MyApplication>
